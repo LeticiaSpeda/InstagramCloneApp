@@ -11,6 +11,9 @@
 		E099C3B72C432C24001CD66B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099C3B62C432C24001CD66B /* ContentView.swift */; };
 		E099C3B92C432C26001CD66B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E099C3B82C432C26001CD66B /* Assets.xcassets */; };
 		E099C3BC2C432C26001CD66B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E099C3BB2C432C26001CD66B /* Preview Assets.xcassets */; };
+		E099C3C62C432D2C001CD66B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099C3C52C432D2C001CD66B /* User.swift */; };
+		E099C3C92C432D68001CD66B /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099C3C82C432D68001CD66B /* UserSession.swift */; };
+		E099C3CB2C432DAF001CD66B /* UserSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099C3CA2C432DAF001CD66B /* UserSessionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E099C3B62C432C24001CD66B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E099C3B82C432C26001CD66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E099C3BB2C432C26001CD66B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E099C3C52C432D2C001CD66B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E099C3C82C432D68001CD66B /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		E099C3CA2C432DAF001CD66B /* UserSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		E099C3B32C432C24001CD66B /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				E099C3C22C432D06001CD66B /* Domain */,
 				E099C3B42C432C24001CD66B /* InstagramCloneApp.swift */,
 				E099C3B62C432C24001CD66B /* ContentView.swift */,
 				E099C3B82C432C26001CD66B /* Assets.xcassets */,
@@ -65,6 +72,32 @@
 				E099C3BB2C432C26001CD66B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E099C3C22C432D06001CD66B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E099C3C32C432D0A001CD66B /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E099C3C32C432D0A001CD66B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E099C3C42C432D0E001CD66B /* Model */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E099C3C42C432D0E001CD66B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E099C3C52C432D2C001CD66B /* User.swift */,
+				E099C3C82C432D68001CD66B /* UserSession.swift */,
+				E099C3CA2C432DAF001CD66B /* UserSessionService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +172,9 @@
 			files = (
 				E099C3B72C432C24001CD66B /* ContentView.swift in Sources */,
 				E099C3B52C432C24001CD66B /* InstagramCloneApp.swift in Sources */,
+				E099C3CB2C432DAF001CD66B /* UserSessionService.swift in Sources */,
+				E099C3C62C432D2C001CD66B /* User.swift in Sources */,
+				E099C3C92C432D68001CD66B /* UserSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
