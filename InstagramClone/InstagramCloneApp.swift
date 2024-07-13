@@ -1,17 +1,13 @@
-//
-//  InstagramCloneApp.swift
-//  InstagramClone
-//
-//  Created by Leticia Speda on 13/07/24.
-//
-
 import SwiftUI
 
 @main
-struct InstagramCloneApp: App {
+struct YourApp: App {
+    @StateObject private var userSessionService = UserSessionService()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MasterView()
+                .environmentObject(userSessionService)
         }
     }
 }
